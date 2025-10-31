@@ -1,5 +1,6 @@
 public enum OrderStatus {
     NEW,
     CLOSED,
-    CANCELED;
+    CANCELED,
+    DELETED;
 }
