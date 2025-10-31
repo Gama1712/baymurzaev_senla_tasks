@@ -19,5 +19,12 @@ class Mechanic{
     public String toString(){
         return "Id мастера : " + getId() + ",Имя: " + getName();
     }
+    @Override
+    public boolean equals(Object o){
+        if (this == o) return true;
+        if (!(o instanceof Mechanic)) return false;
+        Mechanic m = (Mechanic) o;
+        return id == m.id;//Приводим тип и сравниваем логический идентификатор
+}
     
 }
